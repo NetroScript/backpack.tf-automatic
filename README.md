@@ -1,3 +1,7 @@
+# Currently not accepting offers, am looking into it --> useless to download #
+
+
+
 # Personal Note #
 
 * This is a "fixed" version of the old node backpack.tf-automatic
