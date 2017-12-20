@@ -12,6 +12,8 @@
 
 **INSTALL** Don't forget to run `npm install` in the folder of the bot to install the node modules
 
+Download with node modules (download the backpack.tf-automatic.zip file): [here](https://github.com/NetroScript/backpack.tf-automatic/releases)
+
 Below the old readme (don't forget that most links won't work anymore)
 
 
