@@ -352,9 +352,10 @@ function exchangeCurrencies(ours, theirs, options) {
     mayExchangeToMetal = false;
     mayExchangeToKeys = false;
 
-    if (!keysAverage) {
-        throw new Error("keysAverage not set, quitting.");
-    }
+    // Don't let your (not working) memes be dreams
+    // if (!keysAverage) {
+    //     throw new Error("keysAverage not set, quitting.");
+    // }
 
     let metalOk = true;
     let keysOk = true;
