@@ -76,14 +76,15 @@ function heartbeat() {
 
 	let params = {
 		token: token,
-        automatic: ((boEnabled)? "all" : "sell")
+        automatic: ((boEnabled)? "all" : "sell"),
+        i_understand_the_risks: "true"
 	}
 
     if (boEnabled && etag) params.etag = etag;
 
     return new Promise((resolve, reject) => {
         Utils.postJSON({
-            url: automatic.apiPath("aux/heartbeat/v1"),
+            url: automatic.apiPath("IAutomatic/IHeartBeat"), //automatic.apiPath("aux/heartbeat/v1"),
             form: params
         }).then(([body, c, status]) => {
             if (!body.hasOwnProperty("bumped")) {
@@ -344,8 +345,6 @@ function handleOther(offer, other) {
 
 function exchangeCurrencies(ours, theirs, options) {
     let keysAverage = options.keysAverage || null;
-//Selber gesetzt
-    keysAverage = 28.33;
     let mayExchangeToMetal = options.mayExchangeToMetal || false;
     let mayExchangeToKeys = options.mayExchangeToKeys || false;
 

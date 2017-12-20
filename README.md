@@ -1,7 +1,3 @@
-# Currently not accepting offers, am looking into it --> useless to download #
-
-
-
 # Personal Note #
 
 * This is a "fixed" version of the old node backpack.tf-automatic
@@ -17,6 +13,13 @@
 **INSTALL** Don't forget to run `npm install` in the folder of the bot to install the node modules
 
 Download with node modules (download the backpack.tf-automatic.zip file): [here](https://github.com/NetroScript/backpack.tf-automatic/releases)
+
+
+## Personal Changelog
+
+###1.3.2
+* Reverted to old API of automatic because it also returns the currencies which are needed to evaluate trade offers, should this end point be removed at some point (before the new api) I will fix it again *shrugs*
+
 
 Below the old readme (don't forget that most links won't work anymore)
 
