@@ -10,6 +10,7 @@
 * If you don't like this feel free to try out a [python version](https://github.com/mninc/automatic-v2)
 * If you need a new token generate one [here](https://backpack.tf/connections)
 
+* **INSTALL** Don't forget to run `npm install` in the folder of the bot to install the node modules
 
 Below the old readme (don't forget that most links won't work anymore)
 
