@@ -77,14 +77,13 @@ function heartbeat() {
 	let params = {
 		token: token,
         automatic: ((boEnabled)? "all" : "sell"),
-        i_understand_the_risks: "true"
 	}
 
     if (boEnabled && etag) params.etag = etag;
 
     return new Promise((resolve, reject) => {
         Utils.postJSON({
-            url: automatic.apiPath("IAutomatic/IHeartBeat"), //automatic.apiPath("aux/heartbeat/v1"),
+            url: automatic.apiPath("aux/heartbeat/v1"),
             form: params
         }).then(([body, c, status]) => {
             if (!body.hasOwnProperty("bumped")) {
@@ -470,7 +469,8 @@ function handleSellOrder(offer, listings) {
     if (theirs.metal % 1 >= 0.99) theirs.metal = Math.ceil(theirs.metal);
 
     let {metalOk: metalOk, keysOk: keysOk} = exchangeCurrencies(ours, theirs, {
-        keysAverage: automatic.currencyAvg("keys"),
+      //A value is needed so that the functions which depends on known currencies isn't called
+        keysAverage: 35,//automatic.currencyAvg("keys"),
         mayExchangeToMetal: automatic.mayExchangeToCurrency("metal"),
         mayExchangeToKeys: automatic.mayExchangeToCurrency("keys")
     });

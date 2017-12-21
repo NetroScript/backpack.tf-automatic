@@ -17,6 +17,9 @@ Download with node modules (download the backpack.tf-automatic.zip file): [here]
 
 ## Personal Changelog
 
+### 1.3.3
+* Changed again to the new api because I forgot that the old API doesn't bump anymore, oh my - to make it work key value is hard set (currency exchange still disabled), maybe I will fix that later on but on the other side - new automatic version will come anyways 
+
 ### 1.3.2
 * Reverted to old API of automatic because it also returns the currencies which are needed to evaluate trade offers, should this end point be removed at some point (before the new api) I will fix it again *shrugs*
 

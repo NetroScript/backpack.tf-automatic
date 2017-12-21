@@ -1,6 +1,6 @@
 {
   "name": "backpack.tf-automatic",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Sell items automatically via backpack.tf Classifieds without running a Steam client.",
   "author": {
     "name": "backpack.tf Team",

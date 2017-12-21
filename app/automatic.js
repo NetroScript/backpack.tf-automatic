@@ -135,6 +135,5 @@ process.on('uncaughtException', (err) => {
     process.exit(1);
 })
 
-log.warn("Currency exchange is disabled in this release (1.3.1) due to a" +
-    " vulnerability. This feature will be enabled again in the" +
-    " future.");
+log.warn("Currency exchange is hard disabled " +
+    "If I am bored I might fix it ");
